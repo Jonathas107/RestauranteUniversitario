@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:restaurante_universitario/screens/cadastro.dart';
 import 'package:restaurante_universitario/screens/cadastroGRU.dart';
 import 'package:restaurante_universitario/screens/home.dart';
+import 'package:restaurante_universitario/screens/pegarFicha.dart';
 
 class HomePageon extends StatefulWidget {
   @override
@@ -59,6 +60,11 @@ class _HomePageState extends State<HomePageon> {
           ListTile(title: Text("Cadastrar GRU"), onTap: (){
             Navigator.of(context).push(MaterialPageRoute(
               builder: (context) => CadastroGRU()
+            ));
+          },),
+          ListTile(title: Text("Pegar Ficha"), onTap: (){
+            Navigator.of(context).push(MaterialPageRoute(
+              builder: (context) => PegarFicha()
             ));
           },),
           SizedBox(

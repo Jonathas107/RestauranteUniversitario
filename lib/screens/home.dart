@@ -28,8 +28,11 @@ class _HomePageState extends State<HomePage> {
             children: <Widget>[
               Padding(
                 padding: EdgeInsets.only(top: 20.0),
-                child: Card(
-                  child: Image.asset('images/logo.jpg')
+                child: Container(
+                  height: 130,
+                  child: Image.asset(
+                    "images/arte.png", fit: BoxFit.cover
+                  )
                 ),
               )
             ],
