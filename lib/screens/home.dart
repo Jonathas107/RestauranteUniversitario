@@ -26,6 +26,9 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: Colors.white,
         body: ScopedModelDescendant<UserModel>(
           builder: (context, child, model) {
+            if(model.isLoading){
+              return Center(child: CircularProgressIndicator(),);
+            }
             return Form(
               key: _formKey,
               child: ListView(
