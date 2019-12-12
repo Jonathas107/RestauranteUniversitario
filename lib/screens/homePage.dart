@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:restaurante_universitario/screens/cadastro.dart';
-import 'package:restaurante_universitario/screens/cadastroGRU.dart';
-import 'package:restaurante_universitario/screens/home.dart';
-import 'package:restaurante_universitario/screens/pegarFicha.dart';
+import 'package:ru/screens/cadastro.dart';
+import 'package:ru/screens/cadastroGRU.dart';
+import 'package:ru/screens/home.dart';
+import 'package:ru/screens/pegarFicha.dart';
 
 class HomePageon extends StatefulWidget {
   @override

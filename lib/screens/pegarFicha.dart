@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:restaurante_universitario/screens/transacaoFicha.dart';
+import 'package:ru/screens/transacaoFicha.dart';
 
 class PegarFicha extends StatefulWidget {
   @override

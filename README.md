@@ -1,4 +1,4 @@
-# restaurante_universitario
+# ru
 
 A new Flutter project.
 

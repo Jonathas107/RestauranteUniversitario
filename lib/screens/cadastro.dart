@@ -1,88 +1,131 @@
 import 'package:flutter/material.dart';
 
-class Cadastro extends StatefulWidget {
-  @override
-  _CadastroState createState() => _CadastroState();
-}
-
-class _CadastroState extends State<Cadastro> {
+class Cadastro extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    final _formKey = GlobalKey<FormState>();
     return Scaffold(
       appBar: AppBar(
-        title: Text('Cadastro de úsuario', style: TextStyle(color: Colors.white),),
+        title: Text(
+          'Cadastro de úsuario',
+          style: TextStyle(color: Colors.white),
+        ),
         centerTitle: true,
         backgroundColor: Colors.red,
       ),
       backgroundColor: Colors.white,
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.red,
-        child: Icon(Icons.check, color: Colors.white,),
-        onPressed: (){
-          Navigator.of(context).pop();
+        child: Icon(
+          Icons.check,
+          color: Colors.white,
+        ),
+        onPressed: () {
+          if(_formKey.currentState.validate()){
+            Navigator.of(context).pop();
+          }
+          
         },
       ),
-      body: SingleChildScrollView(
-        padding: EdgeInsets.all(10.0),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+      body: Form(
+        child: ListView(
+          padding: EdgeInsets.all(16.0),
           children: <Widget>[
-            Icon(Icons.person_add, size: 200,),
-            Divider(color: Colors.white),
-            TextField(
-              decoration: InputDecoration(
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(20.0),
-                ),
-                labelText: "Nome"
-              ),
+            Icon(
+              Icons.person_add,
+              size: 200,
             ),
             Divider(color: Colors.white),
-            TextField(
+            TextFormField(
               decoration: InputDecoration(
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(20.0),
-                ),
-                labelText: "Cidade"
-              ),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(20.0),
+                  ),
+                  labelText: "Nome"),
+              validator: (text) {
+                if (text.isEmpty) {
+                  return "Por favor, preencha o campo.";
+                } else {
+                  return null;
+                }
+              },
             ),
             Divider(color: Colors.white),
-            TextField(
+            TextFormField(
               decoration: InputDecoration(
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(20.0),
-                ),
-                labelText: "Estado"
-              ),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(20.0),
+                  ),
+                  labelText: "Cidade"),
+              validator: (text) {
+                if (text.isEmpty) {
+                  return "Por favor, preencha o campo.";
+                } else {
+                  return null;
+                }
+              },
             ),
             Divider(color: Colors.white),
-            TextField(
+            TextFormField(
               decoration: InputDecoration(
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(20.0),
-                ),
-                labelText: "Campus"
-              ),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(20.0),
+                  ),
+                  labelText: "Estado"),
+              validator: (text) {
+                if (text.isEmpty) {
+                  return "Por favor, preencha o campo.";
+                } else {
+                  return null;
+                }
+              },
+            ),
+            Divider(color: Colors.white),
+            TextFormField(
+              decoration: InputDecoration(
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(20.0),
+                  ),
+                  labelText: "Campus"),
+              validator: (text) {
+                if (text.isEmpty) {
+                  return "Por favor, preencha o campo.";
+                } else {
+                  return null;
+                }
+              },
             ),
             Divider(color: Colors.white),
             Divider(color: Colors.white),
-            TextField(
+            TextFormField(
               decoration: InputDecoration(
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(20.0),
-                ),
-                labelText: "Email"
-              ),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(20.0),
+                  ),
+                  labelText: "Email"),
+              validator: (text) {
+                if (text.isEmpty || !text.contains('@')) {
+                  return "Email Inválido!";
+                } else {
+                  return null;
+                }
+              },
             ),
             Divider(color: Colors.white),
-            TextField(
+            TextFormField(
               obscureText: true,
               decoration: InputDecoration(
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(20.0),
-                ),
-                labelText: "Senha"
-              ),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(20.0),
+                  ),
+                  labelText: "Senha"),
+              validator: (text) {
+                if (text.isEmpty || text.length < 6) {
+                  return "Senha Inválida!";
+                } else {
+                  return null;
+                }
+              },
             ),
           ],
         ),

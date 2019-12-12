@@ -33,18 +33,25 @@ class FormCard extends StatelessWidget {
                     SizedBox(
                       height: ScreenUtil.getInstance().setHeight(30),
                     ),
-                    Text("Nome", style: TextStyle(
+                    Text("Email", style: TextStyle(
                       fontFamily: "Poppins-medium",
                       fontSize: ScreenUtil.getInstance().setSp(26)
                     ),),
-                    TextField(
+                    TextFormField(
                       decoration: InputDecoration(
                         icon: Icon(Icons.person, color: Colors.grey),
-                        hintText: "Insira seu nome",
+                        hintText: "Insira seu Email",
                         hintStyle: TextStyle(
                           color: Colors.grey, fontSize: 12.0
                         )
                       ),
+                      validator: (text){
+                        if(text.isEmpty || !text.contains('@')){
+                          return "Email Inválido!";
+                        }else{
+                          return null;
+                        }
+                      },
                     ),
                     SizedBox(
                       height: ScreenUtil.getInstance().setHeight(30),
@@ -53,15 +60,22 @@ class FormCard extends StatelessWidget {
                       fontFamily: "Poppins-medium",
                       fontSize: ScreenUtil.getInstance().setSp(26)
                     ),),
-                    TextField(
+                    TextFormField(
                       obscureText: true,
                       decoration: InputDecoration(
                         icon: Icon(Icons.vpn_key, color: Colors.grey,),
                         hintText: "Insira sua senha",
                         hintStyle: TextStyle(
                           color: Colors.grey, fontSize: 12.0
-                        )
+                        ),
                       ),
+                      validator: (text){
+                        if(text.isEmpty || text.length < 6){
+                          return "Senha Inválida!";
+                        }else{
+                          return null;
+                        }
+                      },
                     ),
                     SizedBox(height: ScreenUtil.getInstance().setHeight(35),),
                     Row(
