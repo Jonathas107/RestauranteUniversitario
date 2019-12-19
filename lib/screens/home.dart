@@ -32,17 +32,17 @@ class _HomePageState extends State<HomePage> {
             return Form(
               key: _formKey,
               child: ListView(
-                padding: EdgeInsets.all(16.0),
+                padding: EdgeInsets.all(10.0),
                 children: <Widget>[
                   Padding(
-                    padding: EdgeInsets.only(top: 20.0),
+                    padding: EdgeInsets.only(top: 30.0),
                     child: Image.asset(
                       "images/arte.png",
-                      height: 30,
+                      height: 150,
                     ),
                   ),
                   SizedBox(
-                    height: ScreenUtil.getInstance().setHeight(180),
+                    height: ScreenUtil.getInstance().setHeight(100),
                   ),
                   FormCard(),
                   SizedBox(
