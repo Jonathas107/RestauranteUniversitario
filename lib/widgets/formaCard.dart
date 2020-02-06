@@ -6,7 +6,6 @@ class FormCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
             width: double.infinity,
-            height: ScreenUtil.getInstance().setHeight(500),
             decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.circular(8.0),
@@ -38,6 +37,7 @@ class FormCard extends StatelessWidget {
                       fontSize: ScreenUtil.getInstance().setSp(26)
                     ),),
                     TextFormField(
+                      keyboardType: TextInputType.emailAddress,
                       decoration: InputDecoration(
                         icon: Icon(Icons.person, color: Colors.grey),
                         hintText: "Insira seu Email",
@@ -78,14 +78,17 @@ class FormCard extends StatelessWidget {
                       },
                     ),
                     SizedBox(height: ScreenUtil.getInstance().setHeight(35),),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.end,
-                      children: <Widget>[
-                        Text("Esqueceu a senha?", style: TextStyle(
-                          color: Colors.red, fontFamily: "Poppins-medium",
-                          fontSize: ScreenUtil.getInstance().setSp(28)
-                        ),)
-                      ],
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 15),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: <Widget>[
+                          Text("Esqueceu a senha?", style: TextStyle(
+                            color: Colors.red, fontFamily: "Poppins-medium",
+                            fontSize: ScreenUtil.getInstance().setSp(28)
+                          ),)
+                        ],
+                      ),
                     )
                   ],
                 ),

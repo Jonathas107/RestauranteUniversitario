@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/home/jonathas/flutter projects/RestauranteUniversitario/build/cloud_firestore/intermediates/res/merged/release/color/common_google_signin_btn_text_light.xml",
+        "source": "/home/jonathas/.gradle/caches/transforms-1/files-1.1/play-services-base-17.0.0.aar/b1666b26a04dfae548df7b5c3a0f5c1f/res/color/common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/home/jonathas/flutter projects/RestauranteUniversitario/build/cloud_firestore/intermediates/res/merged/release/color/common_google_signin_btn_text_dark.xml",
+        "source": "/home/jonathas/.gradle/caches/transforms-1/files-1.1/play-services-base-17.0.0.aar/b1666b26a04dfae548df7b5c3a0f5c1f/res/color/common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/home/jonathas/flutter projects/RestauranteUniversitario/build/cloud_firestore/intermediates/res/merged/release/color/common_google_signin_btn_tint.xml",
+        "source": "/home/jonathas/.gradle/caches/transforms-1/files-1.1/play-services-base-17.0.0.aar/b1666b26a04dfae548df7b5c3a0f5c1f/res/color/common_google_signin_btn_tint.xml"
+    }
+]

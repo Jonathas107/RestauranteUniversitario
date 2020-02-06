@@ -1,0 +1,4 @@
+#Wed Feb 05 18:47:15 BRT 2020
+base.0=/home/jonathas/flutter projects/RestauranteUniversitario/build/app/intermediates/transforms/r8/release/1
+path.0=classes.dex
+renamed.0=classes.dex

@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/home/jonathas/flutter projects/RestauranteUniversitario/build/cloud_firestore/intermediates/res/merged/release/layout/notification_action_tombstone.xml",
+        "source": "/home/jonathas/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/728cb8c9530fc29550c15dafb51eee03/res/layout/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/home/jonathas/flutter projects/RestauranteUniversitario/build/cloud_firestore/intermediates/res/merged/release/layout/notification_template_part_time.xml",
+        "source": "/home/jonathas/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/728cb8c9530fc29550c15dafb51eee03/res/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "/home/jonathas/flutter projects/RestauranteUniversitario/build/cloud_firestore/intermediates/res/merged/release/layout/notification_action.xml",
+        "source": "/home/jonathas/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/728cb8c9530fc29550c15dafb51eee03/res/layout/notification_action.xml"
+    },
+    {
+        "merged": "/home/jonathas/flutter projects/RestauranteUniversitario/build/cloud_firestore/intermediates/res/merged/release/layout/notification_template_part_chronometer.xml",
+        "source": "/home/jonathas/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/728cb8c9530fc29550c15dafb51eee03/res/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "/home/jonathas/flutter projects/RestauranteUniversitario/build/cloud_firestore/intermediates/res/merged/release/layout/notification_template_icon_group.xml",
+        "source": "/home/jonathas/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/728cb8c9530fc29550c15dafb51eee03/res/layout/notification_template_icon_group.xml"
+    }
+]
